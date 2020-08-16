@@ -1,0 +1,30 @@
+{
+    "lastModify" : "2020-05-03",
+    "useType" : "sub page",
+    "tabItems" : [{
+            "itemName": "학교",
+            "itemColor": "red",
+            "itemContent": "학교에 관한 내용들입니다."
+        },
+        {
+            "itemName": "공원",
+            "itemColor": "black",
+            "itemContent": "공원에 관한 내용들입니다. "
+        },
+        {
+            "itemName": "놀이터",
+            "itemColor": "blue",
+            "itemContent": "놀이터에 관한 내용들입니다."
+        },
+        {
+            "itemName": "집안",
+            "itemColor": "violet",
+            "itemContent": "집안에 관한 내용들입니다."
+        },
+        {
+            "itemName": "사무실",
+            "itemColor": "orange",
+            "itemContent": "사무실에 관한 내용들입니다."
+        }
+    ]
+}

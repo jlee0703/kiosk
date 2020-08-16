@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+html {
+	font-size:100%;
+}
+body {
+	font:normal 12px 'Franklin Gothic Medium', "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	line-height:1.3;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+img {border: none;}
+ul, ol {
+	list-style: none;
+}
+a:link, a:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a:hover {
+	color: #666666;
+	text-decoration:underline;
+}
+
+
+/* common */
+
+body {
+	padding: 40px;
+	width: 1000px;
+}
+.wrap {
+	padding: 30px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	border: 3px solid gray;
+	position: relative;
+}
+h1 {
+	font-size: 40px; color: #666666; font-style: bold; 
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.admin {
+	display: inline-block;
+	position: absolute; right: 2px; top: -20px;
+	cursor: pointer;
+}
+.admin p {
+	font-size: 15px; font-style: bold; letter-spacing: -2px; color: #666666;
+}
+.menu {
+	margin: 30px auto;
+	text-align: center;
+}
+.menu > li {
+	display: inline-block;
+}
+.menu li.board {
+	display: block;
+	border-bottom: 3px dotted gray;
+	margin-bottom: 30px;
+}
+.menu li.board h2 {
+	font-size: 25px;
+	padding: 15px 0 25px;
+}
+.menu li ul {
+	width: 156px;
+	box-sizing: border-box;
+	font-size: 0;
+	position: relative;
+	cursor: pointer;
+}
+.menu img {
+	width: 150px; height: 100px;
+	border: 2px solid red;
+}
+.menu span {
+	width: 150px;
+	padding: 10px 0 5px;
+	display: inline-block;
+	font-size: 16px; font-style: normal;
+}
+.menu em {
+	width: 150px;
+	display: inline-block;
+	font-size: 16px; font-style: normal;
+}
+.menu em:after {
+	content: '원';
+	display: block;
+	position: absolute; bottom: 0; right: 20px;
+}
+
+
+.menuHolder {
+	position: relative;
+}
+.menuHolder h4 {
+	font-size: 25px;
+	padding: 15px 0 25px;
+}
+.menuHolder .priceSum {
+	border-bottom: 2px double gray;
+	width: 150px; height: 30px;
+	text-align: right;	
+	position: absolute; right: 10px; bottom: -50px;
+}
+.menuHolder .imgHolder{
+	border: 2px dotted gray;
+	height: 200px;
+	margin-bottom: 30px;
+}
+.imgHolder > ul {
+	height: 180px;
+	box-sizing: border-box;
+	margin-top: 12px;
+}
+.imgHolder ul li {
+	display: none;
+}
+.imgHolder ul li.on {
+	display: block;
+}
+.imgHolder > ul > li {
+	width: 150px; height: 180px;
+	margin-left: 38px;
+	float: left;
+	position: relative;
+}
+.imgHolder ul li img {
+	border: 1px solid red;
+	width: 150px; height: 100px;
+}
+.imgHolder ul li .noBox {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.imgHolder ul li .noBox li {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	margin: 5px 0;
+}
+.imgHolder ul li .minus {
+	width: 30%; height: 30px;
+	cursor: pointer;
+}
+.imgHolder ul li .plus {
+	width: 30%; height: 30px;
+	cursor: pointer;
+}
+.imgHolder ul li input {
+	border: 2px solid gray; border-radius: 10%;
+	width: 100%; height: 30px;
+	font-size: 25px;  line-height: 0.8;
+	cursor: pointer;
+	padding: 0px 0px 2px 1px;
+}
+.imgHolder ul li .oderNo {
+	width: 31%; height: 30px;
+	border: 1px solid red;
+}
+.imgHolder ul li em {
+	border: 1px solid lime;
+	display: block;
+	width: 100%; height: 30px;
+	font-size: 16px; font-style: normal; line-height: 2.0;
+}
+.imgHolder ul li em:after {
+	content: '원'; 
+	font-size: 16px; font-style: normal;
+	position: absolute; right: 0px; bottom: 1px;
+}
+/* .imgHolder */
+.imgUl > li {
+	position: relative;
+}
+.imgUl > li:after {
+	content: 'X'; display: block;
+	font-size: 12px; color: white; font-weight: bold; line-height: 1.5;
+	background-color: gray;
+	width: 15px; height: 15px;
+	border: 2px solid gray;
+	position: absolute; top: 0; right: -1px;
+	cursor: pointer;
+}
+.priceSum {
+	padding: 0 13px 0 0;
+}
+.priceSum em {
+	font-size: 16px; font-style: normal; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: inline-block;
+	line-height: 1.9;
+	padding: 0 5px;
+}
+.priceSum em:after {
+	content: '원';
+	display: block;
+	position: absolute; bottom: 0; right: 0px;
+}
+
+.order {
+	margin-top: 100px;
+}
+.order p {
+	border: 3px solid burlywood;
+	width: 300px;
+	display: inline-block;
+	padding: 15px 0;
+	font-size: 25px;
+	cursor: pointer;
+}
+
